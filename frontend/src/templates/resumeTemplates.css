@@ -1,0 +1,242 @@
+/* ============================================================
+   RESUME TEMPLATES - COMBINED STYLESHEET
+   Each template has its own class prefix (modern-, professional-,
+   minimal-) so their styles never clash even though they live in
+   one file. To add a new template later: pick a new prefix (e.g.
+   "creative-") and add its rules below, following the same pattern.
+   ============================================================ */
+
+/* ---------------- MODERN TEMPLATE ---------------- */
+/* Look: bold accent color header band, clean sans-serif */
+
+.modern-resume {
+  background-color: #ffffff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #1f2937;
+  min-height: 1000px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.modern-header {
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 32px 40px;
+}
+
+.modern-name {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+}
+
+.modern-contact-line {
+  font-size: 13px;
+  color: #dbeafe;
+  margin: 2px 0;
+}
+
+.modern-body {
+  padding: 24px 40px;
+}
+
+.modern-section {
+  margin-bottom: 20px;
+}
+
+.modern-section-heading {
+  font-size: 15px;
+  font-weight: 700;
+  color: #2563eb;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #2563eb;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+}
+
+.modern-entry {
+  margin-bottom: 12px;
+}
+
+.modern-entry-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.modern-text {
+  font-size: 13px;
+  color: #374151;
+  margin: 4px 0;
+  line-height: 1.5;
+}
+
+.modern-tech-line {
+  font-size: 13px;
+  font-style: italic;
+  color: #4b5563;
+  margin: 2px 0;
+}
+
+.modern-link-line {
+  font-size: 12px;
+  color: #2563eb;
+  margin: 2px 0;
+}
+
+/* ---------------- PROFESSIONAL TEMPLATE ---------------- */
+/* Look: classic serif font, centered header, black/grey only */
+
+.professional-resume {
+  background-color: #ffffff;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #1a1a1a;
+  min-height: 1000px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 40px 48px;
+}
+
+.professional-header {
+  text-align: center;
+  border-bottom: 3px double #1a1a1a;
+  padding-bottom: 14px;
+  margin-bottom: 22px;
+}
+
+.professional-name {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  letter-spacing: 1px;
+}
+
+.professional-contact-line {
+  font-size: 13px;
+  color: #444444;
+  margin: 2px 0;
+}
+
+.professional-section {
+  margin-bottom: 20px;
+}
+
+.professional-section-heading {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-bottom: 1px solid #1a1a1a;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+}
+
+.professional-entry {
+  margin-bottom: 12px;
+}
+
+.professional-entry-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.professional-text {
+  font-size: 13px;
+  color: #2a2a2a;
+  margin: 4px 0;
+  line-height: 1.6;
+}
+
+.professional-tech-line {
+  font-size: 13px;
+  font-style: italic;
+  color: #444444;
+  margin: 2px 0;
+}
+
+.professional-link-line {
+  font-size: 12px;
+  color: #1a1a1a;
+  text-decoration: underline;
+  margin: 2px 0;
+}
+
+/* ---------------- MINIMAL / ATS-FRIENDLY TEMPLATE ---------------- */
+/* Look: no colors, no graphics, plain hierarchy - easiest for ATS to parse */
+
+.minimal-resume {
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+  min-height: 1000px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 36px 44px;
+}
+
+.minimal-header {
+  margin-bottom: 18px;
+}
+
+.minimal-name {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 6px 0;
+}
+
+.minimal-contact-line {
+  font-size: 13px;
+  color: #000000;
+  margin: 2px 0;
+}
+
+.minimal-section {
+  margin-bottom: 16px;
+}
+
+.minimal-section-heading {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 3px;
+  margin-bottom: 8px;
+}
+
+.minimal-entry {
+  margin-bottom: 10px;
+}
+
+.minimal-entry-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.minimal-text {
+  font-size: 13px;
+  color: #000000;
+  margin: 3px 0;
+  line-height: 1.5;
+}
+
+.minimal-tech-line {
+  font-size: 13px;
+  color: #000000;
+  margin: 2px 0;
+}
+
+.minimal-link-line {
+  font-size: 12px;
+  color: #000000;
+  margin: 2px 0;
+}
+
+/* ============================================================
+   TO ADD TEMPLATE #4 ONWARD:
+   Copy one block above (e.g. everything under MINIMAL), paste it
+   below, rename every ".minimal-" prefix to your new template's
+   name (e.g. ".creative-"), then change colors/fonts/spacing.
+   ============================================================ */

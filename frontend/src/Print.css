@@ -1,0 +1,41 @@
+/* ============================================================
+   PRINT STYLES
+   These rules ONLY apply when the browser is printing (or doing
+   "Save as PDF"). They're invisible during normal browsing.
+   We use them to hide everything except the resume itself.
+   ============================================================ */
+
+@media print {
+  /* Hide the entire page by default */
+  body * {
+    visibility: hidden;
+  }
+
+  /* Show only the resume preview and everything inside it */
+  #resume-print-area,
+  #resume-print-area * {
+    visibility: visible;
+  }
+
+  /* Pull the resume out to the top-left corner of the printed page,
+     ignoring wherever it was positioned on screen (e.g. sticky sidebar) */
+  #resume-print-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  /* Remove browser default page margins so the resume uses the full page */
+  @page {
+    margin: 10mm;
+  }
+
+  /* Resume templates use box-shadow for the "paper" look on screen -
+     that looks bad in print, so remove it */
+  .modern-resume,
+  .professional-resume,
+  .minimal-resume {
+    box-shadow: none !important;
+  }
+}
